@@ -1,5 +1,3 @@
-# antagosoft-test
-
 ## Project setup
 ```
 npm install
