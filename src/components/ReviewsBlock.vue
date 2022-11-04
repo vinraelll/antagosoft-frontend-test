@@ -12,7 +12,7 @@
 
       <div class="reviews__nav-counters">
         <button class="reviews__like-btn">131</button>
-        <button class="reviews__comments-btn">14</button>
+        <button class="reviews__comments-btn">{{ commentsCounter }}</button>
       </div>
     </div>
 
@@ -37,6 +37,11 @@ export default {
       type: Array,
       required: true,
       default: () => [],
+    },
+  },
+  computed: {
+    commentsCounter: function () {
+      return this.reviews.length;
     },
   },
 };
